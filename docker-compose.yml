@@ -2,7 +2,7 @@ version: '2'
 services:
     atop:
         image: mhristof/ansible-1.9.4
-        command: 
+        command: ansible --version
         volumes:
             - ./:/etc/ansible/roles
 
