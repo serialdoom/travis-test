@@ -7,7 +7,8 @@ services:
 
 
 before_install:
-    - docker pull ubuntu:14.04.3
+    - docker pull mhristof/ansible-1.9.4
+    - docker run mhristof/ansible-1.9.4
 
 script:
-    - ls -al
+    make test
